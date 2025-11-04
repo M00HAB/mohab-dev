@@ -10,7 +10,7 @@ import React, { useState } from "react";
 
 const Index = () => {
   // Add state for certification images (one for each card, 4 entries for 4 certs)
-  const [certImages, setCertImages] = useState(['/public/AWARDS/AMIT.png', '/public/Educations/NTI.png', '/public/AWARDS/ITI.png', '/public/AWARDS/MaharaTechpng.png']);
+  const [certImages, setCertImages] = useState(['/AWARDS/AMIT.png', '/Educations/NTI.png', '/AWARDS/ITI.png', '/AWARDS/MaharaTechpng.png']);
   
   // Handler for uploading images
   const handleCertImageChange = (index: number, event: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +26,7 @@ const Index = () => {
     }
   };
 
-  const [awardImages, setAwardImages] = useState(['/public/AWARDS/IoT-1-1-scaled.webp', '/public/AWARDS/ICPC-LOGO.png', '/public/AWARDS/BTU.jfif','/public/Companies logo/Creativia.png',]);
+  const [awardImages, setAwardImages] = useState(['/AWARDS/IoT-1-1-scaled.webp', '/AWARDS/ICPC-LOGO.png', '/AWARDS/BTU.jfif','/Companies logo/Creativia.png',]);
   const handleAwardImageChange = (index: number, event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
@@ -40,7 +40,7 @@ const Index = () => {
     }
   };
 
-  const [educationImages, setEducationImages] = useState(['/public/Educations/fc_Engineering_Minia.jfif','/public/Educations/NTI.png']);
+  const [educationImages, setEducationImages] = useState(['/Educations/fc_Engineering_Minia.jfif','/Educations/NTI.png']);
   const handleEducationImageChange = (index: number, event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
@@ -65,7 +65,7 @@ const Index = () => {
             <div className="flex-shrink-0">
               <div className="w-48 h-48 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-border overflow-hidden">
                 <img
-                  src="/public/Mohab's Picture.jpg"
+                  src="/Mohab's Picture.jpg"
                   alt="Mohab's Picture"
                   className="w-full h-full object-cover"
                 />
@@ -223,7 +223,7 @@ const Index = () => {
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-lg bg-muted border border-border overflow-hidden">
                     <img
-                      src="/public/Companies logo/UPS.jpg"
+                      src="/Companies logo/UPS.jpg"
                       alt="UPS Logo"
                       className="w-full h-full object-cover"
                     />
@@ -249,7 +249,7 @@ const Index = () => {
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-lg bg-muted border border-border overflow-hidden">
                     <img
-                      src="/public/Companies logo/Athar.png"
+                      src="/Companies logo/Athar.png"
                       alt="Athar Logo"
                       className="w-full h-full object-cover"
                     />
@@ -279,7 +279,7 @@ const Index = () => {
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-lg bg-muted border border-border overflow-hidden">
                     <img
-                      src="/public/Companies logo/Creativia.png"
+                      src="/Companies logo/Creativia.png"
                       alt="Company Logo"
                       className="w-full h-full object-cover"
                     />
