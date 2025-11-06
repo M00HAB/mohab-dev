@@ -101,7 +101,13 @@ const Index = () => {
                   onClick={() => {
                     const contactSection = document.getElementById('contact');
                     if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
+                      const offset = 80; // Height of fixed navbar + some padding
+                      const elementPosition = contactSection.getBoundingClientRect().top;
+                      const offsetPosition = elementPosition + window.pageYOffset - offset;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
                     }
                   }}
                 >
