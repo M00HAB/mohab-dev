@@ -2,6 +2,7 @@
 
 A modern, responsive portfolio website showcasing my projects, experience, education, and achievements. Built with React, TypeScript, and Tailwind CSS.
 
+
 ## 🌟 Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
